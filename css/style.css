@@ -2,8 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
 
 
 div#container {
@@ -63,21 +67,6 @@ img#logo {
   background-color: rgba(0, 0, 0, 0.658);
 }
 
-h2 {
-  text-align: center;
-  margin: 1rem;
-  color: rgb(165, 149, 62);
-  font-size: 2rem;
-  letter-spacing: 0.25rem;
-  font-family: 'Italianno', cursive;
-}
-
-main {
-  background: url('../img/main.jpg');
-  grid-column: 1/13;
-  background-size: cover;
-  height: 60vh;
-}
 
 /*--------------MENU------------*/
 
@@ -176,4 +165,72 @@ main {
 .change-bg {
   width: 100vw;
   height: 60%;
+}
+
+/*
+  MAIN <---------------------!!!---------------------->
+*/
+
+main {
+  background: url('../img/main.jpg');
+  grid-column: 1/13;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+  color: rgb(165, 149, 62);
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+  font-family: 'Italianno', cursive;
+}
+
+button#foodMenu {
+  display: block;
+  margin: 2rem auto;
+  background: linear-gradient(45deg, rgb(145, 131, 52), rgb(146, 134, 22));
+  box-shadow: -1px -5px 10px rgba(51, 50, 47, 0.384);
+}
+
+
+.displayNoneFood {
+  display: none;
+  transition: all ease-in-out 0.75s;
+}
+
+div#openHours {
+  background: linear-gradient(45deg, rgb(133, 44, 44), rgb(199, 37, 37));
+  color: white;
+  padding: 1rem;
+  font-size: 1.15rem;
+  text-align: center;
+  box-shadow: -1px -5px 10px rgb(51, 50, 47);
+  position: sticky;
+  width: 100vw;
+}
+
+#openHours li {
+  padding: 0.25rem;
+}
+
+li#freeDay {
+  border: solid 1px white;
+  width: 60%;
+  text-align: center;
+  padding: 0.5rem;
+  color: rgb(214, 214, 214);
+  margin: 0.5rem auto;
+  border-radius: 0.25rem;
+  box-shadow: -1px -5px 10px rgba(255, 255, 255, 0.473);
+}
+
+div#foodList {
+  background: linear-gradient(45deg, rgba(145, 131, 52, 0.692), rgba(146, 134, 22, 0.733));
+  box-shadow: -1px -5px 10px rgba(53, 52, 52, 0.61);
+  margin: 1rem 0;
+}
+
+#foodList li {
+  padding: 0.5rem;
 }
