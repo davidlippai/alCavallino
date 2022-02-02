@@ -47,6 +47,10 @@ button {
   transition: all ease-in-out 0.15s;
 }
 
+button a {
+  color: white;
+}
+
 button:hover {
   background: linear-gradient(45deg, rgb(163, 56, 56), rgb(224, 44, 44));
   transition: all ease-in-out 0.15s;
@@ -55,9 +59,6 @@ button:hover {
   border-radius: 0.5rem;
 }
 
-#orderBtn {
-  background-color: green;
-}
 
 
 img#logo {
