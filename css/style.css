@@ -51,6 +51,10 @@ button a {
   color: white;
 }
 
+button a:visited {
+  color: white;
+}
+
 button:hover {
   background: linear-gradient(45deg, rgb(163, 56, 56), rgb(224, 44, 44));
   transition: all ease-in-out 0.15s;
