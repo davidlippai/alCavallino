@@ -197,6 +197,7 @@ button#foodMenu {
 .displayNoneFood {
   display: none;
   transition: all ease-in-out 0.75s;
+
 }
 
 div#openHours {
@@ -220,15 +221,17 @@ li#freeDay {
   text-align: center;
   padding: 0.5rem;
   color: rgb(214, 214, 214);
-  margin: 0.5rem auto;
+  margin: 0.75rem auto;
   border-radius: 0.25rem;
-  box-shadow: -1px -5px 10px rgba(255, 255, 255, 0.473);
+  letter-spacing: 0.25rem ;
+  box-shadow: -1px -5px 5px rgba(255, 255, 255, 0.39);
 }
 
 div#foodList {
   background: linear-gradient(45deg, rgba(145, 131, 52, 0.692), rgba(146, 134, 22, 0.733));
   box-shadow: -1px -5px 10px rgba(53, 52, 52, 0.61);
   margin: 1rem 0;
+  color: white;
 }
 
 #foodList li {
