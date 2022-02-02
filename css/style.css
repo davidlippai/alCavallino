@@ -139,7 +139,7 @@ img#logo {
   background: radial-gradient(circle, rgba(5, 5, 5, 0.836), rgba(0, 0, 0, 0.918));
   border-radius: 5%;
   transition: 0.75s ease;
-  box-shadow: 2px 3px 10px rgb(183, 146, 98);
+  box-shadow: 2px 3px 10px rgb(20, 20, 19);
 }
 
 .change {
@@ -197,8 +197,12 @@ button#foodMenu {
 .displayNoneFood {
   display: none;
   transition: all ease-in-out 0.75s;
-
 }
+
+.foodNamePrice:nth-child(even){
+  background: linear-gradient(45deg, rgb(204, 186, 116), rgb(168, 154, 28));
+}
+
 
 div#openHours {
   background: linear-gradient(45deg, rgb(133, 44, 44), rgb(199, 37, 37));
@@ -227,13 +231,49 @@ li#freeDay {
   box-shadow: -1px -5px 5px rgba(255, 255, 255, 0.39);
 }
 
+
+/*
+SPEISEN---------------------------------!!---------------------->
+*/
+
 div#foodList {
-  background: linear-gradient(45deg, rgba(145, 131, 52, 0.692), rgba(146, 134, 22, 0.733));
+  background: linear-gradient(45deg, rgba(145, 131, 52, 0.849), rgba(146, 134, 22, 0.877));
   box-shadow: -1px -5px 10px rgba(53, 52, 52, 0.61);
   margin: 1rem 0;
   color: white;
 }
 
+#foodList h3 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.35rem;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
+  font-weight: 400;
+  border-bottom: solid 1px white;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.733));
+  transition: all ease-in-out 0.25s;
+}
+
+#foodList h3:hover {
+  transform: scale(0.98);
+  transition: all ease-in-out 0.25s;
+  border-radius: 0.25rem;
+}
+
 #foodList li {
-  padding: 0.5rem;
+  padding: 0.15rem 0.5rem;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+#foodList p {
+  font-size: 1.05rem;
+  font-style: italic;
+  letter-spacing: 0.15rem;
+  border-bottom: solid 1px white;
+  padding: 0.35rem 0.75rem;
 }

@@ -5,7 +5,6 @@ function menuOnClick() {
 }
 
 // SPEISE Btn Function 
-
 let foodMenuBtn = document.getElementById("foodMenu");
 
 foodMenuBtn.addEventListener('click', function(){
@@ -13,3 +12,25 @@ foodMenuBtn.addEventListener('click', function(){
 
   foodListDisplay.classList.toggle("displayNoneFood");
 });
+
+
+
+// VorSpeise Function
+let vorSpeiseBtn = document.getElementById("vorSpeisenBtn");
+
+vorSpeiseBtn.addEventListener('click',function(){
+  let vorSpeisenListDisplay = document.getElementById("vorSpeisenList");
+
+  vorSpeisenListDisplay.classList.toggle("displayNoneFood");
+
+})
+
+// Suppe Function
+let suppenBtn = document.getElementById("suppenBtn");
+
+suppenBtn.addEventListener('click',function(){
+  let suppenListDisplay = document.getElementById("suppenList");
+
+  suppenListDisplay.classList.toggle("displayNoneFood");
+
+})
