@@ -89,7 +89,7 @@ img#logo {
 .bar {
   height: 5px;
   width: 100%;
-  background-color: rgb(183, 146, 98);
+  background-color: rgb(204, 204, 204);
   display: block;
   border-radius: 5px;
   transition: 0.3s ease;
@@ -120,11 +120,15 @@ img#logo {
 }
 
 .nav li a {
-  color: rgb(183, 146, 98);
+  color: #0c6957;
   font-size: 1.25rem;
   text-decoration: none;
   font-family: 'Playfair Display', serif;
   letter-spacing: 0.15rem;
+}
+
+nav li a#gutschein {
+  color: rgb(112, 37, 37);
 }
 
 .nav li a:hover {
@@ -141,10 +145,9 @@ img#logo {
   z-index: 1;
   width: 0;
   height: 0;
-  background: radial-gradient(circle, rgba(5, 5, 5, 0.836), rgba(0, 0, 0, 0.918));
-  border-radius: 5%;
-  transition: 0.75s ease;
-  box-shadow: 2px 3px 10px rgb(20, 20, 19);
+  background: radial-gradient(circle, rgba(243, 243, 243, 0.836), rgba(204, 203, 203, 0.918));
+  transition: 0.35s ease;
+  box-shadow: 2px 3px 10px rgb(187, 187, 187);
 }
 
 .change {
@@ -152,7 +155,7 @@ img#logo {
 }
 
 .change .bar {
-  background-color: rgb(183, 146, 98);
+  background-color: rgb(112, 37, 37);
 }
 
 .change #bar1 {
@@ -185,7 +188,7 @@ main {
 h1 {
   text-align: center;
   margin: 1rem;
-  color: rgb(165, 149, 62);
+  color: #0c6957;
   font-size: 2rem;
   letter-spacing: 0.25rem;
   font-family: 'Italianno', cursive;
@@ -194,18 +197,18 @@ h1 {
 button#foodMenu {
   display: block;
   margin: 2rem auto;
-  background: linear-gradient(45deg, rgb(145, 131, 52), rgb(146, 134, 22));
+  background: linear-gradient(45deg, #0c6957, #0C705C);
   box-shadow: -1px -5px 10px rgba(51, 50, 47, 0.384);
 }
 
 
 .displayNoneFood {
   display: none;
-  transition: all ease-in-out 0.75s;
+ 
 }
 
-.foodNamePrice:nth-child(even){
-  background: linear-gradient(45deg, rgb(204, 186, 116), rgb(168, 154, 28));
+.foodNamePrice{
+  background: linear-gradient(45deg,#1c5f52, #128d75);
 }
 
 
@@ -236,16 +239,39 @@ li#freeDay {
   box-shadow: -1px -5px 5px rgba(255, 255, 255, 0.39);
 }
 
+/*------------------Herzlich Wilkommen-----------------*/
+
+div#aboutUs{
+  background-color: rgba(255, 255, 255, 0.842);
+}
+
+div#aboutUs h3 {
+  text-align: center;
+  padding: 0.75rem;
+  letter-spacing: 0.25rem;
+  border-top: solid 1px black;
+}
+
+div#aboutUs p {
+  padding: 0.5rem 1rem;
+  font-size: 1.15rem;
+  text-indent: 2rem;
+
+}
+
+
+
 
 /*
 SPEISEN---------------------------------!!---------------------->
 */
 
 div#foodList {
-  background: linear-gradient(45deg, rgba(145, 131, 52, 0.849), rgba(146, 134, 22, 0.877));
+  background: linear-gradient(45deg, #22413b, #0C6957);
   box-shadow: -1px -5px 10px rgba(53, 52, 52, 0.61);
   margin: 1rem 0;
   color: white;
+  
 }
 
 #foodList h3 {
@@ -256,12 +282,11 @@ div#foodList {
   cursor: pointer;
   font-weight: 400;
   border-bottom: solid 1px white;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.733));
   transition: all ease-in-out 0.25s;
 }
 
 #foodList h3:hover {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.616));
+  background: linear-gradient(45deg, #37665d, #107e68);
 }
 
 #foodList li {
@@ -280,3 +305,35 @@ div#foodList {
   border-bottom: solid 1px white;
   padding: 0.35rem 0.75rem;
 }
+
+#vorSpeisenList, #suppenList {
+  border-top: solid 2px white;
+}
+
+/*-------------FOOTER START-----------------*/
+
+footer {
+  grid-column: 1/13;
+  background: linear-gradient(45deg, rgb(133, 44, 44), rgb(199, 37, 37));
+  color: white;
+  font-size: 1.15rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+i#facebookLogo {
+  font-size: 2rem;
+  padding: 0.15rem;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+i#facebookLogo:hover {
+  transform: scale(0.975);
+  transition: all ease-in-out 0.15s;
+}
+

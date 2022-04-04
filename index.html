@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="assets/css/all.css">
         <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,18 +33,18 @@
                     </div>
                     <nav class="nav" id="nav">
                         <ul>
-                            <li><a href="#">Pizzeria</a></li>
+                            <li><a href="#menu-bg">Pizzeria</a></li>
                             <li><a href="#foodMenu">Speisen</a></li>
-                            <li><a href="#">Galerie</a></li>
-                            <li><a href="#">Gutschein</a></li>
-                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="gallery.html">Galerie</a></li>
+                            <li><a id="gutschein" href="#">Gutschein</a></li>
+                            <li><a href="contact.html">Kontakt</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="menu-bg" id="menu-bg"></div>
                 <div id="importantButtonsMobil">
-                    <button id="reservierenBtn">Reservieren</button>
+                    <button id="reservierenBtn">                        <a href="tel:0521420309">Reservieren</a></button>
                     <button id="orderBtn">
                         <a href="tel:0521420309">Bestellung</a>
                     </button>
@@ -126,8 +126,26 @@
                             <li id="freeDay">Mittwoch Ruhetag</li>
                         </ul>
                     </div>
+                    <div id="aboutUs">
+                        <h3>Herzlich Willkommen...</h3>
+                        <p>
+                            in der Pizzeria Trattoria Al Cavallino!Freuen Sie sich auf den wahren Geschmack Italiens.Seit 2009 legen wir großen Wert darauf, Ihnen unsere Gerichtestets frisch auf den Tisch zu zaubern.Deshalb bitten wir um Verständnis, wenn es in der Saison teils zu Wartezeiten kommen kann.
+                        </p> 
+                        <h3>Besuchen Sie Uns</h3>
+                        <p>
+                            Genießen Sie im Sommer unsere gemütliche Terrasse mit herrlicher Aussicht auf die Tiroler Berge.Bei einem kühlen Getränk oder einer leckeren Speise können Sie einen tollen Urlaubstag perfekt ausklingen lassen.Im Winter laden unsere Tiroler Stube mit urigem Kamin und der gemütliche Hauptgastraum im italienischen Stil zum Verweilen ein.
+                        </p> 
+                    </div>
                 </section>
             </main>
+            <footer>
+                <div>
+                    Mauro, Verena & das gesamte Team freuen sich auf Ihren Besuch!
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/alcavallino.leutasch?fref=ts"><i id="facebookLogo" class="fa-brands fa-facebook-square"></i></a>
+                </div>
+            </footer>
         </div>
         <script src="app.js"></script>
     </body>

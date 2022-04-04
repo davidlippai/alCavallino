@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+div#gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 1rem auto;
+	background-color: rgba(255, 255, 255, 0.774);
+}
+
+div#gallery img {
+	width: 90%;
+	max-width: 500px;
+	filter: grayscale(100);
+	display: block;
+	transition: all ease-in-out 0.25s;
+	margin: 0.5rem auto;
+	border-radius: 0.35rem;
+	box-shadow: 0px 10px 10px rgba(61, 61, 61, 0.295);
+}
+
+div#gallery img:hover {
+	filter: grayscale(0);
+}

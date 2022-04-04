@@ -1,0 +1,22 @@
+/*------------MAP | CONTACT -----------*/
+
+#imObjectMap_2_frame {
+	width: 100vw;
+	height: 40vh;
+  }
+
+  header {
+	  height: auto;
+	 
+  }
+
+ div#contact {
+	padding: 0.75rem;
+	background: linear-gradient(45deg, rgb(112, 37, 37), #D64747);
+	color: white;
+	font-family: 'Playfair Display', serif;
+	letter-spacing: 0.25rem;
+	font-weight: 200;
+	text-align: center;
+ }
+
