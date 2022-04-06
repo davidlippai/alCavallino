@@ -6,7 +6,7 @@
 }
 
 html {
-  background-color: #000000;
+  background-color: #0000006c;
 }
 
 body {
@@ -329,6 +329,28 @@ footer {
   padding: 1rem 1rem;
 }
 
+
+/*---------EFFECTS*/
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  grid-column: 2/3;
+  transform: translateX(-50%);
+}
+
+.from-right {
+  grid-column: 3/4;
+  transform: translateX(-50%);
+}
+
+
 i#facebookLogo {
   font-size: 2rem;
   padding: 0.15rem;
@@ -380,12 +402,12 @@ img#gutscheinImg {
     background-size: cover;
     background-attachment:  fixed;
     min-height: 380px;
-  
+    
   }
   
   img#logo{
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.87),rgb(32, 32, 32));
-    max-width: 350px;
+    max-width: 300px;
     display: block;
     margin-right: 0;
     margin-left: auto;
@@ -443,9 +465,29 @@ img#gutscheinImg {
   div#importantButtonsMobil {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 35%;
+    margin: 0rem auto 4rem;
+    flex-direction: row;
+
 
 }
+
+  button#foodMenu {
+    animation: shining 2.5s linear infinite;
+    transition: all ease-in-out 0.25s;
+  }
+
+  @keyframes shining {
+    0% {background:#0C705C}
+    33% {background:#0f977c}
+    66% {background:#0C705C}
+    100% {background:#0C705C}
+  }
+
+  div#foodList {
+    max-width: 768px;
+    margin:1rem auto;
+  }
 
   /*-----Footer -----*/
 

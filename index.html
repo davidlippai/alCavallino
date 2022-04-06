@@ -5,8 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!--FONT AWESOME-->
         <link rel="stylesheet" href="assets/css/all.css">
+        <meta name="description" content="Pizzeria Trattoria, Al Cavallino, Leutasch, Seefeld">
+        <meta name="keywords" content="Pizza, Pizza bestellen, Lieferservice, Essen bestellen, Seefeld, Seefeld.com, Iphone">
         <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <meta name="author" content="David Lippai">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
@@ -18,6 +21,7 @@
             href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
             rel="stylesheet"
         />
+        
 
         <title>Pizzeria Trattoria Al Cavallino</title>
     </head>
@@ -56,7 +60,7 @@
                     <button id="foodMenu">Speisen</button>
                     <div class="displayNoneFood" id="foodList">
                         <!--VorSpeisen -->
-                        <div id="vorSpeisen">
+                        <div id="vorSpeisen" class="fade-in">
                             <h3 id="vorSpeisenBtn">Antipasti - Vorspeisen</h3>
                             <ul id="vorSpeisenList" class="displayNoneFood">
                                 <div class="foodNamePrice">
@@ -94,7 +98,7 @@
 
                         <!--Suppen-->
 
-                        <div id="suppen">
+                        <div id="suppen" class="fade-in">
                             <h3 id="suppenBtn">Zuppe - Suppen</h3>
                             <ul id="suppenList" class="displayNoneFood">
                                 <div class="foodNamePrice">
@@ -129,17 +133,17 @@
                     </div>
                     <div id="aboutUs">
                         <h3>Herzlich Willkommen...</h3>
-                        <p>
+                        <p class="fade-in">
                             in der Pizzeria Trattoria Al Cavallino!Freuen Sie sich auf den wahren Geschmack Italiens.Seit 2009 legen wir großen Wert darauf, Ihnen unsere Gerichtestets frisch auf den Tisch zu zaubern.Deshalb bitten wir um Verständnis, wenn es in der Saison teils zu Wartezeiten kommen kann.
                         </p> 
                         <h3>Besuchen Sie Uns</h3>
-                        <p>
+                        <p class="fade-in">
                             Genießen Sie im Sommer unsere gemütliche Terrasse mit herrlicher Aussicht auf die Tiroler Berge.Bei einem kühlen Getränk oder einer leckeren Speise können Sie einen tollen Urlaubstag perfekt ausklingen lassen.Im Winter laden unsere Tiroler Stube mit urigem Kamin und der gemütliche Hauptgastraum im italienischen Stil zum Verweilen ein.
                         </p> 
                     </div>
                 </section>
             </main>
-            <footer>
+            <footer class="fade-in">
                 <div id="LastMessage">
                     Mauro, Verena & das gesamte Team freuen sich auf Ihren Besuch!
                 </div>
@@ -149,5 +153,6 @@
             </footer>
         </div>
         <script src="app.js"></script>
+
     </body>
 </html>
