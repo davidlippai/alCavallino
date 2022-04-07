@@ -424,7 +424,12 @@ img#gutscheinImg {
 
   }
 
+  p {
+    max-width: 550px;
 
+    text-align: justify;
+    margin: 0 auto;
+  }
 
   nav ul{
     display: flex;
